@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- external stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <div id="user">
+            <h1>Play Game</h1>
+            <p>Click on the picture, you want to choose....</p>
+            <div id="wrapper">
+                <div class="wrap-img" id="stone" onclick="userfun(this)"><img src="images/Stone.jpg" alt=""></div>
+                <div class="wrap-img" id="paper" onclick="userfun(this)"><img src="images/Paper.jpg" alt=""></div>
+                <div class="wrap-img" id="scissor" onclick="userfun(this)"><img src="images/Scissor.jpg" alt=""></div>
+            </div>
+        </div>
+        <div id="outlook">
+            <h1>Result</h1>
+            <div id="choice">
+                <div class="show">
+                    <p>Human</p>
+                    <div class="box-img" id="user-choice"><img src="images/Stone.jpg" alt=""></div>
+                </div>
+                <div class="show">
+                    <p>Computer</p>
+                    <div class="box-img" id="computer-choice"><img src="images/Paper.jpg" alt=""></div>
+                </div>
+                <div id="result">
+                    <p id="score"></p>
+                    <a href="#" id="reload">Play Again</a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- external js -->
+    <script src="script.js"></script>
+</body>
+</html>
